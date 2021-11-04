@@ -19,12 +19,17 @@
 }
 
 #palmeG {
-     position: relative;
-     background-color: black;
-     width: 400px;
-     height: 20px;
-     top: 40px;
-     left: -70px;
+    position: relative;
+    background-color: black;
+    width: 400px;
+    height: 20px;
+    top: 40px;
+    left: -70px;
+    transform-origin: 50% 50%;
+    animation-name: rotHelice;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
 
 #palmeH {
@@ -34,13 +39,20 @@
     height: 400px;
     top: -175px;
     left: 117px;
-}
-
-#helice {
+    transform-origin: 50% 50%;
     animation-name: rotHelice;
     animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
 
 @keyframes rotHelice {
 
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }

@@ -9,7 +9,6 @@
 
 #roue1 {
     display: inline-block;
-
     position: relative;
      width: 50px;
      height: 50px;
@@ -40,15 +39,32 @@
     position: absolute;
     animation-name: direction-voiture;
     animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
 
 
 @keyframes direction-voiture {
 
+    0% {
+        margin-left: 1%;
+    }
+
+    100% {
+        margin-left: 85%;
+    }
+
 }
 
 @keyframes rotation-roue {
 
+    0% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
 }
 
 
@@ -103,10 +119,17 @@
     position: absolute;
     animation-name: nuage;
     animation-duration: 20s;
+    animation-direction: alternate;
 }
 
 
 
 @keyframes nuage {
+    0% {
+        margin-left: 1%;
+    }
 
+    100% {
+        margin-left: 90%;
+    }
 }
