@@ -2,7 +2,6 @@
     width: 250px;
     height: 250px;
     background: red;
-
     animation-name : foo-animation;
     animation-duration : 8s;
     animation-fill-mode : forwards;
@@ -44,4 +43,7 @@
     position: absolute;
     left: 500px;
     top: 25px;
+    animation-name : foo-animation;
+    animation-duration : 8s;
+    animation-fill-mode : forwards;
 }
